@@ -1,0 +1,11 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "webpack项目的练习",
+  "main": "index.js",
+  "author": "kui guo",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}
