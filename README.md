@@ -268,6 +268,7 @@ index.html
   </body>
 </html>
 ```
+
 Webpack follows `webpack.config.js` to build `bundle.js`.
 
 
@@ -292,6 +293,204 @@ const config = {
             }
         ]
     }
+};
+module.exports = config;
+```
+
+Launch the server, visit http://127.0.0.1:8080 .
+
+```bash
+$ webpack-dev-server
+```
+
+## Demo6: CSS Module ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo6)）
+
+index.js
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css'
+ReactDOM.render(
+    <div>
+        <h1 className="h1">hello world!!!</h1>
+        <h2 className="h2">hello world!!!</h2>
+        <h3 className="h3">hello world!!!</h3>
+        <h4 className="h4">hello world!!!</h4>
+    </div>,
+    document.getElementById("root")
+);
+```
+
+index.html
+
+```html
+<html>
+  <body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+Webpack follows `webpack.config.js` to build `bundle.js`.
+
+
+```javascript
+const config = {
+    entry: './index.js',
+    output: {
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env','react']
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            }
+        ]
+    }
+};
+module.exports = config;
+```
+
+Launch the server, visit http://127.0.0.1:8080 .
+
+```bash
+$ webpack-dev-server
+```
+
+## Demo7: UglifyJs Plugin ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo7))
+
+index.js
+
+```javascript
+document.write("<h1>hello world!</h1>");
+document.write("<h2>hello world!!</h2>");
+document.write("<h3>hello world!!!</h3>");
+document.write("<h4>hello world!!!!</h4>");
+```
+
+index.html
+
+```html
+<html>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+Webpack follows `webpack.config.js` to build `bundle.js`.
+
+
+```javascript
+const webpack = require('webpack');
+const config = {
+    entry: './index.js',
+    output: {
+        filename: 'bundle.js'
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ]
+};
+module.exports = config;
+```
+Launch the server, visit http://127.0.0.1:8080 .
+
+```bash
+$ webpack-dev-server
+```
+
+## Demo8: HTML Webpack Plugin ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo8))
+
+index.js
+
+```javascript
+document.write("<h1>hello world!!!</h1>");
+document.write("<h2>hello world!!!</h2>");
+document.write("<h3>hello world!!!</h3>");
+```
+Webpack follows `webpack.config.js` to build `bundle.js` and `index.thml`.
+
+```javascript
+const webpack = require('webpack');
+const HtmlwebpackPlugin = require('html-webpack-plugin');
+const config = {
+    entry: './index.js',
+    output: {
+        filename: 'bundle.js'
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
+        new HtmlwebpackPlugin({
+            title: 'demo8',
+            filename: 'index.html'
+        })
+    ]
+};
+module.exports = config;
+```
+
+Launch the server, visit http://127.0.0.1:8080 .
+
+```bash
+$ webpack-dev-server
+```
+
+## Demo9: Environment flags ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo9))
+
+index.js
+
+```javacript
+document.write("<h1>hello world!!!</h1>");
+if (__DEV__) {
+    document.write(new Date());
+}
+```
+
+index.html
+
+```html
+<html>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+
+Webpack follows `webpack.config.js` to build `bundle.js`.
+
+
+```javascript
+const webpack = require('webpack');
+const config = {
+    entry: './index.js',
+    output: {
+        filename: 'bundle.js'
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            __DEV__: JSON.stringify(true)
+        })
+    ]
 };
 module.exports = config;
 ```
