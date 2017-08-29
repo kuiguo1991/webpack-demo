@@ -124,7 +124,7 @@ Launch the server, visit http://127.0.0.1:8080 .
 $ webpack-dev-server
 ```
 
-## Demo3: Babel-loader([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo3)）
+## Demo3: Babel-loader ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo3)）
 
 ```javascript
 // index.js
@@ -183,7 +183,7 @@ Launch the server, visit http://127.0.0.1:8080 .
 $ webpack-dev-server
 ```
 
-## Demo4: CSS-loader([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo4)）
+## Demo4: CSS-loader ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo4)）
 
 index.js
 
@@ -236,7 +236,7 @@ Launch the server, visit http://127.0.0.1:8080 .
 $ webpack-dev-server
 ```
 
-## Demo5: Image loader([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo4)）
+## Demo5: Image loader ([source](https://github.com/kuiguo1991/webpack-demo/tree/master/demo5)）
 
 index.js
 
