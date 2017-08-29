@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2d59d4a-49c2-4c5b-9f89-a493aef53950" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo1/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo2/bundle1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo2/bundle2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo3/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo4/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo5/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo6/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo7/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo8/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo9/bundle.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a2d59d4a-49c2-4c5b-9f89-a493aef53950" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -179,12 +167,12 @@
       <workItem from="1503847505459" duration="1551000" />
       <workItem from="1503889261522" duration="1121000" />
       <workItem from="1503907978236" duration="4531000" />
-      <workItem from="1503968532827" duration="810000" />
+      <workItem from="1503968532827" duration="1408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11727000" />
+    <option name="totallyTimeSpent" value="12325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
