@@ -22,8 +22,7 @@ const config = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name][hash].[ext]',
-                            publicPath: 'assets'
+                            name: 'image/[name][hash].[ext]'
                         }
                     }
                 ]
