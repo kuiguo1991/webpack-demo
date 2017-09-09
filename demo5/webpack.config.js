@@ -1,7 +1,7 @@
 const config = {
     entry: './index.js',
     output: {
-        filename: 'bundle.js'
+        filename: 'js/bundle.js'
     },
     module: {
         rules: [
@@ -22,7 +22,7 @@ const config = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'image/[name][hash].[ext]'
+                            name: 'image/[name]_[hash].[ext]'
                         }
                     }
                 ]
