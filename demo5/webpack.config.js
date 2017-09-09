@@ -11,18 +11,8 @@ const config = {
                     {
                         loader: 'url-loader',
                         options: {
+                            name: 'image/[name]_[hash].[ext]',
                             limit: 8192
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'image/[name]_[hash].[ext]'
                         }
                     }
                 ]
