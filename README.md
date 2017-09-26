@@ -5,7 +5,7 @@
 First, install [Webpack](https://yarnpkg.com/zh-Hans/package/webpack) and [webpack-dev-server](https://yarnpkg.com/zh-Hans/package/webpack-dev-server) globally.
 
 ```bash
-$yarn add webpack webpack-dev-server
+$ yarn add webpack webpack-dev-server
 ```
 
 Then, clone the repo and install the dependencies.
